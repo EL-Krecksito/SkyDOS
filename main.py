@@ -2,7 +2,7 @@ import platform
 import os
 
 if platform.system == 'Linux':
-    os.system('figlet -r SkyDos|lolcat')
+    os.system('figlet -r SkyDOS|lolcat')
 elif platform.system == 'Windows':
     os.system('.\/FiFIGlet-Win32(static)/figlet.exe|.\/Meow/bin/meow.ps1')
 
