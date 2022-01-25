@@ -1,9 +1,9 @@
 import platform
 import os
 
-if platform.system == 'Linux':
+if platform.system() == 'Linux':
     os.system('figlet -r SkyDOS|lolcat')
-elif platform.system == 'Windows':
+elif platform.system() == 'Windows':
     os.system('.\/FiFIGlet-Win32(static)/figlet.exe|.\/Meow/bin/meow.ps1')
 
 url = input('URL/IP a probar: ')
