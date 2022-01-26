@@ -9,6 +9,7 @@ elif platform.system() == 'Windows':
 
 url = input('URL/IP a probar: ')
 by = int(input('Numero de paquetes/bytes: '))
+arg = input('Ingrese un argumento personalizado[opcional]: ')
 
 if by > 50000:
     print('Error: demasiados paquetes/bytes.')
@@ -18,6 +19,6 @@ elif by < 8:
     exit()
 
 if platform.system() == 'Linux':
-    os.system(f'ping {url} -s {by}')
+    os.system(f'ping {url} {arg} -s {by}')
 elif platform.system() == 'Windows':
-    os.system(f'ping -l {by} {url} -t')
+    os.system(f'ping -l {by} {url} -t {arg}')
