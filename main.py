@@ -5,7 +5,7 @@ if platform.system() == 'Linux':
     os.system('figlet -r SkyDOS|lolcat')
 elif platform.system() == 'Windows':
     os.system('title SkyDOS')
-    os.system('.\/FiFIGlet-Win32(static)/figlet.exe|.\/Meow/bin/meow.ps1')
+    os.system('powershell "cd FiFIGlet-Win32;./figlet.exe -r SkyDOS|./..\Meow/bin\meow.ps1"')
 
 url = input('URL/IP a probar: ')
 by = int(input('Numero de paquetes/bytes: '))
